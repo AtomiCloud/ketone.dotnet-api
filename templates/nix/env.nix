@@ -10,18 +10,12 @@ with packages;
     git
   ];
 
-  /*
-    
-  */
   infra = [
     infrautils
   ];
-  /*
-    
-  */
-
 
   main = [
+    bun
     dotnet
     infisical
   ];
@@ -31,15 +25,10 @@ with packages;
     treefmt
     gitlint
     shellcheck
-    sg
-    /*
-      
-    */
     infralint
+    dotnetlint
     helmlint
-    /*
-      
-    */
+    sg
   ];
 
   releaser = [

@@ -5,24 +5,12 @@ let
       with atomi;
       rec {
         dotnetlint = atomi.dotnetlint.override { dotnetPackage = nix-2505.dotnet; };
-        /*
-        
-        */
         helmlint = atomi.helmlint.override { helmPackage = infrautils; };
-        /*
-        
-        */
-        inherit
 
-          /*
-          
-          */
+        inherit
           #infra
           infrautils
           infralint
-          /*
-          
-          */
           atomiutils
           sg
           pls;
@@ -39,6 +27,7 @@ let
         inherit
 
           # standard
+          bun
           git
           infisical
 

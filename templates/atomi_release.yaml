@@ -74,9 +74,6 @@ types:
       default:
         desc: Release a new features
         release: minor
-      breaking:
-        desc: Release a breaking change
-        release: major
   - type: fix
     section: 🐛 Bug Fixes 🐛
     desc: A bug fix

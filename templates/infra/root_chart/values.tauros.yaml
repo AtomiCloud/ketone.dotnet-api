@@ -1,0 +1,53 @@
+serviceTree:
+  landscape: &landscape tauros
+
+bromine:
+  enable: true
+  serviceTree:
+    landscape: *landscape
+
+api:
+  enabled: true
+
+  fullnameOverride: 'dn___service___-api'
+  serviceTree:
+    landscape: *landscape
+
+  imagePullSecrets: []
+
+  replicaCount: 1
+
+  configMountPath: /app/Config
+
+  service:
+    type: ClusterIP
+    port: 80
+    containerPort: 9030
+
+  ingress:
+    enabled: true
+    className: traefik
+    hosts:
+      - host: api.dn___service___.dn___platform___.tauros.lvh.me
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+    tls: []
+
+migration:
+  enabled: true
+  fullnameOverride: 'dn___service___-migration'
+  serviceTree:
+    landscape: *landscape
+
+maindb:
+  enable: true
+  fullnameOverride: 'dn___service___-maindb'
+
+maincache:
+  enable: true
+  fullnameOverride: 'dn___service___-maincache'
+
+mainstorage:
+  enable: true
+  fullnameOverride: 'dn___service___-mainstorage'

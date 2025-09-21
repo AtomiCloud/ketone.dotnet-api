@@ -1,0 +1,53 @@
+$schema: ./schema.json
+# Native
+App:
+  Landscape: lapras
+  EnableSwagger: true
+  GenerateConfig: true
+Swagger:
+  Title: Lapras dn___titleps___ API
+# OTEL
+Logs:
+  Exporter:
+    Console:
+      Enabled: false
+    Otlp:
+      Enabled: false
+Trace:
+  Exporter:
+    Otlp:
+      Enabled: false
+
+Metrics:
+  Exporter:
+    Otlp:
+      Enabled: false
+
+# Infra-based
+Database:
+  MAIN:
+    Host: dn___service___-maindb
+    User: admin
+    Password: supersecret
+    AutoMigrate: true
+
+Cache:
+  MAIN:
+    Endpoints:
+      - dn___service___-maincache:6379
+    Password: supersecret
+BlockStorage:
+  MAIN:
+    Read:
+      Host: mainstorage.dn___service___.dn___platform___.lapras.lvh.me
+      Port: 20010
+      Scheme: http
+    Write:
+      Host: dn___service___-mainstorage
+      Port: 9000
+      Scheme: http
+    Policy: Private
+    UseSSL: false
+    EnsureBucketCreation: true
+# external
+HttpClient: {}

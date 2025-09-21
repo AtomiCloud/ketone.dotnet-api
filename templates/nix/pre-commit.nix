@@ -9,6 +9,8 @@ pre-commit-lib.run {
       enable = true;
       package = formatter;
       excludes = [
+        "infra/.*chart.*/templates/.*(yaml|yml)"
+        "infra/.*chart.*/.*(MD|md)"
         ".*(Changelog|README|CommitConventions).+(MD|md)"
       ];
     };
@@ -16,7 +18,16 @@ pre-commit-lib.run {
     # linters From https://github.com/cachix/pre-commit-hooks.nix
     shellcheck.enable = false;
 
-    # custom precommits 
+    # custom precommits
+    a-config-sync = rec {
+      enable = true;
+      name = "Sync configurations to helm charts";
+      entry = "${packages.atomiutils}/bin/bash scripts/local/config-sync.sh";
+      files = "App/Config/.*\\.yaml";
+      language = "system";
+      pass_filenames = false;
+    };
+
     a-dotnet-lint = {
       enable = true;
       name = "Lint .NET";
@@ -83,9 +94,6 @@ pre-commit-lib.run {
       pass_filenames = true;
     };
 
-    /*
-      
-    */
     a-hadolint = {
       enable = true;
       name = "Docker Linter";
@@ -113,10 +121,6 @@ pre-commit-lib.run {
       language = "system";
       pass_filenames = false;
     };
-    /*
-      
-    */
-
   };
 
 }
