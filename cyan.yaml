@@ -1,0 +1,11 @@
+username: atomi
+name: dotnet-api
+description: AtomiCloud's .NET API
+project: https://github.com/AtomiCloud/ketone.dotnet-api
+source: https://github.com/AtomiCloud/ketone.dotnet-api.git
+email: admin@atomi.cloud
+tags: ['atomi']
+readme: cyan/README.MD
+processors: ['cyan/default']
+plugins: []
+templates: []
