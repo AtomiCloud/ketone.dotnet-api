@@ -5,10 +5,10 @@ vars:
   RELEASE_NAME: dn___platform___-dn___service___
 
 includes:
-  helm: Taskfile.helm.yml
-  tear: tasks/Taskfile.tear.yml
-  stop: tasks/Taskfile.stop.yml
-  util: tasks/Taskfile.util.yml
+  helm: Taskfile.helm.yaml
+  tear: tasks/Taskfile.tear.yaml
+  stop: tasks/Taskfile.stop.yaml
+  util: tasks/Taskfile.util.yaml
 
 env:
   DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: '0'
