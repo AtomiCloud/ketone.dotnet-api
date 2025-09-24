@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.0.4...v1.1.0) (2025-09-24)
+
+
+### ✨ Features ✨
+
+* allow encryption key gen ([2ca38c4](https://github.com/AtomiCloud/ketone.dotnet-api/commit/2ca38c4a942818be8f7b8bd39981e2e64fe7c31d))
+
 ## [1.0.4](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.0.3...v1.0.4) (2025-09-24)
 
 
