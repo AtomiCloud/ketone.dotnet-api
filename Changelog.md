@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.0.1...v1.0.2) (2025-09-24)
+
+
+### 🐛 Bug Fixes 🐛
+
+* missing domain field ([8dd9f98](https://github.com/AtomiCloud/ketone.dotnet-api/commit/8dd9f98f5abb189011539fb065af847f135f1fd3))
+
 ## [1.0.1](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.0.0...v1.0.1) (2025-09-24)
 
 
