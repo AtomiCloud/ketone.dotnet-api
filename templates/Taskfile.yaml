@@ -19,6 +19,10 @@ tasks:
     desc: Generate encryption key
     cmds:
       - openssl rand -hex 16
+  lint:
+    desc: Lint the repository
+    cmds:
+      - pre-commit run --all
   email:dev:
     desc: Preview Emails
     dir: App/Templates/Email
