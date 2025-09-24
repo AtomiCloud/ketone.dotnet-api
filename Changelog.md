@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.0.2...v1.0.3) (2025-09-24)
+
+
+### 🐛 Bug Fixes 🐛
+
+* missing name prompt ([fb9a5bb](https://github.com/AtomiCloud/ketone.dotnet-api/commit/fb9a5bb54294f93a5f64b86d10bc6386d81dbc81))
+
 ## [1.0.2](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.0.1...v1.0.2) (2025-09-24)
 
 
