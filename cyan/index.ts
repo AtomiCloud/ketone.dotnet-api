@@ -14,7 +14,9 @@ StartTemplateWithLambda(async (i, d) => {
   const titleps = `${platformtitle} ${servicetitle}`;
   const upperps = `${platform.toUpperCase()}_${service.toUpperCase()}`;
 
-  const vars = { platform, service, tiltport, port, platformtitle, titleps, upperps };
+  const desc = await i.text('Description', 'desc', 'Description');
+
+  const vars = { platform, service, tiltport, port, platformtitle, titleps, upperps, desc };
   return {
     processors: [
       {
