@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.1.1...v1.2.0) (2025-09-24)
+
+
+### ✨ Features ✨
+
+* add lint to taskfile ([6662251](https://github.com/AtomiCloud/ketone.dotnet-api/commit/6662251f89b8b36464a3b3f735d34271924386b9))
+
 ## [1.1.1](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.1.0...v1.1.1) (2025-09-24)
 
 
