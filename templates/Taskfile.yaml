@@ -15,6 +15,10 @@ env:
   SOS_PROJECT_ID: '1cffa31e-7653-4c0d-9a18-9914a2dbc30b'
 
 tasks:
+  gen:encryption-key:
+    desc: Generate encryption key
+    cmds:
+      - openssl rand -hex 16
   email:dev:
     desc: Preview Emails
     dir: App/Templates/Email
