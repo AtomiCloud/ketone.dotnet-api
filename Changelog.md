@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.1.0...v1.1.1) (2025-09-24)
+
+
+### 🐛 Bug Fixes 🐛
+
+* copy dotless files ([9445f47](https://github.com/AtomiCloud/ketone.dotnet-api/commit/9445f47bd87e01944f2a66cb8489aabff1fa583b))
+
 ## [1.1.0](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.0.4...v1.1.0) (2025-09-24)
 
 
