@@ -14,9 +14,14 @@ StartTemplateWithLambda(async (i, d) => {
   const titleps = `${platformtitle} ${servicetitle}`;
   const upperps = `${platform.toUpperCase()}_${service.toUpperCase()}`;
 
-  const desc = await i.text('Description', 'desc', 'Description');
+  const desc = await i.text('Description', 'desc', 'Description of this project');
+  const domain = await i.text(
+    'Domain',
+    'domain',
+    'The base domain, for sending emails (noreply@notifications.<domain>',
+  );
 
-  const vars = { platform, service, tiltport, port, platformtitle, titleps, upperps, desc };
+  const vars = { platform, service, tiltport, port, platformtitle, titleps, upperps, desc, domain };
   return {
     processors: [
       {
