@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.0.0...v1.0.1) (2025-09-24)
+
+
+### 🐛 Bug Fixes 🐛
+
+* missing desc question ([5913f89](https://github.com/AtomiCloud/ketone.dotnet-api/commit/5913f89a938fe0c7ef6c18e4cd821ae9649bbf26))
+
 ## 1.0.0 (2025-09-24)
 
 
