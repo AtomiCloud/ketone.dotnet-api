@@ -35,6 +35,12 @@ StartTemplateWithLambda(async (i, d) => {
             type: GlobType.Template,
             exclude: [],
           },
+          {
+            root: 'templates',
+            glob: '**/*',
+            type: GlobType.Template,
+            exclude: [],
+          },
         ],
         config: {
           vars,
