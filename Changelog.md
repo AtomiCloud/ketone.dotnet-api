@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.0.3...v1.0.4) (2025-09-24)
+
+
+### 🐛 Bug Fixes 🐛
+
+* yaml instead of yml ([7a01efe](https://github.com/AtomiCloud/ketone.dotnet-api/commit/7a01efe0ce2fa9ab0920a81977427d16b4c6e240))
+
 ## [1.0.3](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.0.2...v1.0.3) (2025-09-24)
 
 
