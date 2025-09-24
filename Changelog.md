@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.2.0...v1.2.1) (2025-09-24)
+
+
+### 🐛 Bug Fixes 🐛
+
+* remove email controller ([be6b4d9](https://github.com/AtomiCloud/ketone.dotnet-api/commit/be6b4d952928c80f1a187e5bbfc62df7b9674878))
+
 ## [1.2.0](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.1.1...v1.2.0) (2025-09-24)
 
 
