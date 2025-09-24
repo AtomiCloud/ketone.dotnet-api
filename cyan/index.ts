@@ -3,6 +3,8 @@ import { GlobType, StartTemplateWithLambda } from '@atomicloud/cyan-sdk';
 StartTemplateWithLambda(async (i, d) => {
   // platform, service, tiltport,  port, platformtitle, titleps, upperps
 
+  const name = await i.text('Name', 'name', 'Name of this project');
+
   const platform = await i.text('Platform', 'platform', 'LPSM Service Tree Platform');
   const service = await i.text('Service', 'service', 'LPSM Service Tree Service');
   const tiltport = await i.text('Tilt Port', 'tiltport', 'Tilt Port');
@@ -18,10 +20,10 @@ StartTemplateWithLambda(async (i, d) => {
   const domain = await i.text(
     'Domain',
     'domain',
-    'The base domain, for sending emails (noreply@notifications.<domain>',
+    'The base domain, for sending emails (noreply@notifications.<domain>)',
   );
 
-  const vars = { platform, service, tiltport, port, platformtitle, titleps, upperps, desc, domain };
+  const vars = { name, platform, service, tiltport, port, platformtitle, titleps, upperps, desc, domain };
   return {
     processors: [
       {
