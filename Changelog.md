@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.2.1...v1.3.0) (2025-09-25)
+
+
+### ✨ Features ✨
+
+* AGENTS.md and docs for framework ([010a46e](https://github.com/AtomiCloud/ketone.dotnet-api/commit/010a46e221154a440c073163b594882c69dd33e2))
+
 ## [1.2.1](https://github.com/AtomiCloud/ketone.dotnet-api/compare/v1.2.0...v1.2.1) (2025-09-24)
 
 
